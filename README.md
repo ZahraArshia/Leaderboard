@@ -43,5 +43,5 @@ Give a ⭐️ if you like this project!
 
 ## License
 
-This project is ![](https://img.shields.io/badge/Microverse-blueviolet) licensed.
+This project is [MIT](./MIT.md) licensed.
 
