@@ -26,11 +26,13 @@ main {
   align-items: center;
 }
 
-table {
+#table {
   border: 1px solid #2d2d2d;
+  list-style: none;
+  padding: 1%;
 }
 
-table :nth-child(even) {
+#table :nth-child(even) {
   background-color: rgb(230, 230, 230);
 }
 
