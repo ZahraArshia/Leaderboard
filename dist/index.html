@@ -7,6 +7,29 @@
   <title>Leaderboard</title>
 <script defer src="main.js"></script></head>
 <body>
-  <p>hello</p>
+  <header>
+    <h1>Leaderboard</h1>
+  </header>
+  <main>
+    <section class="display" id="display">
+      <div class="displayTitle" id="displayTitle">
+        <h3>Recent Scores</h3>
+        <button id="refresh">Refresh</button>
+      </div>
+      <ul id="table"></ul>
+    </section>
+    <section class="add" id="add">
+      <div id="addTitle"><h3>Add your Score</h3></div>
+      <div id="formBox">
+        <form id="form">
+          <input id="name" placeholder="your name" type="text" aria-label="Name" minlength="1" required/>
+          <br>
+          <input id="score" placeholder="your score" type="text" aria-label="score" minlength="1" required/>
+          <br>
+          <button class="submit-btn" id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

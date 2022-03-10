@@ -1,39 +1,28 @@
 import './style.css';
+import { postData, getData } from './modules/fetch.js';
 
-const table = document.getElementById('table');
-const scoreList = [
-  {
-    name: 'name1',
-    score: 100,
-  },
-  {
-    name: 'name2',
-    score: 20,
-  },
-  {
-    name: 'name3',
-    score: 50,
-  },
-  {
-    name: 'name4',
-    score: 78,
-  },
-  {
-    name: 'name5',
-    score: 125,
-  },
-  {
-    name: 'name6',
-    score: 77,
-  },
-  {
-    name: 'name7',
-    score: 42,
-  },
-];
+// ID: FtC3VvFE6shGDfFVfsOp
+const form = document.querySelector('form');
+const name = document.getElementById('name');
+const score = document.getElementById('score');
+const refresh = document.getElementById('refresh');
 
-scoreList.forEach((record) => {
-  const item = document.createElement('tr');
-  item.innerHTML = `${record.name}`;
-  table.appendChild(item);
+window.onload = () => {
+  getData();
+};
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const raw = JSON.stringify({
+    user: name.value,
+    score: score.value,
+  });
+  postData(raw);
+  form.reset();
+  getData();
+});
+
+refresh.addEventListener('click', (e) => {
+  e.preventDefault();
+  getData();
 });
