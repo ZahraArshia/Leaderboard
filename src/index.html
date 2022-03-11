@@ -9,6 +9,7 @@
 <body>
   <header>
     <h1>Leaderboard</h1>
+    <img src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/100/000000/external-cup-award-vitaliy-gorbachev-lineal-color-vitaly-gorbachev-2.png" alt="website logo"/>
   </header>
   <main>
     <section class="display" id="display">
@@ -22,9 +23,9 @@
       <div id="addTitle"><h3>Add your Score</h3></div>
       <div id="formBox">
         <form id="form">
-          <input id="name" placeholder="your name" type="text" aria-label="Name" minlength="1" required/>
+          <input id="name" placeholder="your name" type="text" aria-label="Name" minlength="1" maxlength="50" required/>
           <br>
-          <input id="score" placeholder="your score" type="text" aria-label="score" minlength="1" required/>
+          <input id="score" placeholder="your score" type="number" min="0" max="99999999999" aria-label="score" required/>
           <br>
           <button class="submit-btn" id="submit" type="submit">Submit</button>
         </form>

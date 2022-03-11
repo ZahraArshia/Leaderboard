@@ -2,13 +2,25 @@
 
 * {
   font-family: 'Akaya Telivigala', cursive;
+  font-size: 24px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(82, 82, 212);
+  margin: 1%;
+  padding: 2%;
 }
 
 main {
+  background-image: url('./images/background-hd-7.jpg');
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
-  margin: 3% 10%;
-  align-items: center;
+  margin: 0% 1%;
+  padding: 10%;
   justify-content: center;
 }
 
@@ -16,7 +28,10 @@ main {
   display: flex;
   flex-direction: column;
   margin: 1% 5%;
-  min-width: 200px;
+  background-color: #fffb0080;
+  border-radius: 2%;
+  padding: 2%;
+  width: 15rem;
 }
 
 .displayTitle {
@@ -30,18 +45,35 @@ main {
   border: 1px solid #2d2d2d;
   list-style: none;
   padding: 1%;
+  overflow-y: auto;
+  max-height: 120px;
 }
 
 #table :nth-child(even) {
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(144, 24, 243);
+}
+
+#table :nth-child(odd) {
+  background-color: rgb(255, 251, 4);
 }
 
 .add {
   margin: 1% 5%;
+  background-color: #ff009580;
+  border-radius: 2%;
+  padding: 2%;
+  width: 15rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 input {
-  margin-bottom: 5%;
+  /* margin-bottom: 5%; */
+  width: 8rem;
 }
 
 button {
