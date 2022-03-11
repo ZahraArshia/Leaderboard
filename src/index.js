@@ -1,7 +1,7 @@
 import './style.css';
 import { postData, getData } from './modules/fetch.js';
 
-// ID: FtC3VvFE6shGDfFVfsOp
+// ID: jnpReA4xan62NMZrJJBA
 const form = document.querySelector('form');
 const name = document.getElementById('name');
 const score = document.getElementById('score');
